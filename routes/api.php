@@ -21,5 +21,10 @@ use App\Http\Controllers\ProductController;
 // });
 Route::get('/index', [CategoryController::class, 'index']);
 Route::get('/category/{id}', [CategoryController::class, 'getAllAdsByCategoryId']);
+Route::post('/category', [CategoryController::class, 'storeCategory']);
+Route::post('/product',  [CategoryController::class, 'storeProduct']);
+
+
+
 
 

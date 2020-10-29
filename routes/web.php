@@ -16,3 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/create-category', function () {
+    return view('createCategory');
+});
+Route::get('/create-product', function () {
+    return view('createProduct');
+});

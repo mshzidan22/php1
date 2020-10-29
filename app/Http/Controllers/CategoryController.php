@@ -20,4 +20,16 @@ class CategoryController extends Controller
         $products = $cat->products;
         return $products;
     }
+
+    public function storeCategory(Request $request)
+    {
+        return Category::create($request->all());
+    }
+
+    public function storeProduct(Request $request)
+    {
+        return Product::create($request->all());
+    }
+
+
 }
