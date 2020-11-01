@@ -4,6 +4,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\VideoController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -16,13 +18,9 @@ use App\Http\Controllers\ProductController;
 |
 */
 
-// Route::middleware('auth:api')->get('/user', function (Request $request) {
-//     return $request->user();
-// });
-Route::get('/index', [CategoryController::class, 'index']);
-Route::get('/category/{id}', [CategoryController::class, 'getAllAdsByCategoryId']);
-Route::post('/category', [CategoryController::class, 'storeCategory']);
-Route::post('/product',  [CategoryController::class, 'storeProduct']);
+
+Route::post('/getLinks', [VideoController::class, 'getLinks']);
+
 
 
 

@@ -14,11 +14,13 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+   return view('welcome');
 });
-Route::get('/create-category', function () {
-    return view('createCategory');
-});
-Route::get('/create-product', function () {
-    return view('createProduct');
-});
+Route::get('/home', function () {
+    return view('home');
+ });
+
+  Route::get('/video', function () {
+     return view('videoPage');
+ });
+
